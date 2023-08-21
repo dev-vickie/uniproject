@@ -1,12 +1,10 @@
+import 'package:dartz/dartz.dart';
 import 'package:uniproject/features/todo/domain/entities/todo.dart';
+import 'package:uniproject/shared/errors/failure.dart';
 
 abstract class TodoRepository {
-  //ADD TODO
-  Future<Todo> add(Todo todo);
-  //EDIT TODO
-  Future<Todo> edit(Todo todo);
-  //DELETE TODO
-  Future<Todo> delete(Todo todo);
-  //GET ALL TODOS
-  Future<List<Todo>> getAll();
+  Future<Either<Failure,Todo>> add(Todo todo);
+  Future<Either<Failure,Todo>> edit(Todo todo);
+  Future<Either<Failure,Todo>> delete(Todo todo);
+  Future<Either<Failure, List<Todo>>> getAll();
 }
