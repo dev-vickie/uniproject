@@ -4,12 +4,12 @@ import 'package:uniproject/features/todo/domain/repositories/todo_repository.dar
 import 'package:uniproject/shared/errors/failure.dart';
 import 'package:uniproject/shared/utils/usecase.dart';
 
-class AddTodoUseCase implements UseCase<Todo, Todo> {
+class AddTodoUseCase implements UseCase<Todo, Params<Todo>> {
   final TodoRepository repository;
   AddTodoUseCase({required this.repository});
 
   @override
-  Future<Either<Failure, Todo>> call(Todo todo) async {
-    return await repository.add(todo);
+  Future<Either<Failure, Todo>> call(Params todo) async {
+    return await repository.add(todo.data);
   }
 }
