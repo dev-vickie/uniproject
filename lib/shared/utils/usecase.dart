@@ -5,7 +5,9 @@ abstract class UseCase<Type, Params> {
   Future<Either<Failure, Type>> call(Params params);
 }
 
-abstract class Params<T> {
+//Generic class to pass as params in the usecase class
+//Used to differentiate params from return types especially if they are of the same type
+class Params<T> {
   final T data;
   Params({required this.data});
 }
