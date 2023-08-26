@@ -1,16 +1,14 @@
-# uniproject
+## uniproject
 
-A new Flutter project.
+## Flutter Clean Architecture with CodeMagic for CI/CD
 
-## Getting Started
+This repository contains a Flutter project that follows the Clean Architecture principles and is integrated with CodeMagic for Continuous Integration and Continuous Deployment (CI/CD).
 
-This project is a starting point for a Flutter application.
+### Overview
 
-A few resources to get you started if this is your first Flutter project:
+This Flutter project demonstrates the implementation of Clean Architecture, separating the app's logic into distinct layers: presentation, domain, and data. The project showcases the best practices for structuring and organizing a maintainable and scalable Flutter application.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Clean Architecture:** The project follows a clear separation of concerns, making it easy to manage and test different layers of the app.
+- **CodeMagic CI/CD:** Continuous Integration and Continuous Deployment are set up using CodeMagic, ensuring automated testing and deployment workflows.
