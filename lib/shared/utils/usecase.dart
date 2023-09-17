@@ -11,3 +11,8 @@ class Params<T> {
   final T data;
   Params({required this.data});
 }
+
+class NoParams<T> {
+  final void data;
+  NoParams({required this.data});
+}
